@@ -1,16 +1,11 @@
-/**
- * 业务组件 - 预览组件
- * @创建时间 2020-03-18 13:05:43
- */
 
-import React from 'react';
 import { IIndex } from './type';
 
 const Index = ({ compData, sourceData }: IIndex) => {
   const { style, title, link } = compData.config;
   const value = sourceData[0].value || title;
 
-  const Text:React.FC = () => {
+  const Text = () => {
     if (link.url) {
       return (
         <a href={link.url} target={link.isBlank ? '_blank' : '_self'} rel="noreferrer">
