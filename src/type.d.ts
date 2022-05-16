@@ -8,6 +8,7 @@ export interface Config {
   };
 }
 
+declare var React;
 export interface Data {
   /**
    * 注意：

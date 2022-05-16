@@ -3,13 +3,14 @@
  * @创建时间 2020-03-18 13:05:43
  */
 
+import React from 'react';
 import { IIndex } from './type';
 
 const Index = ({ compData, sourceData }: IIndex) => {
   const { style, title, link } = compData.config;
-  const value = 'test data';
+  const value = sourceData[0].value || title;
 
-  const Text = () => {
+  const Text:React.FC = () => {
     if (link.url) {
       return (
         <a href={link.url} target={link.isBlank ? '_blank' : '_self'} rel="noreferrer">
@@ -17,7 +18,7 @@ const Index = ({ compData, sourceData }: IIndex) => {
         </a>
       );
     }
-    return value;
+    return <>{value}</>;
   };
 
   // 兼容版本
