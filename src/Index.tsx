@@ -7,7 +7,7 @@ import { IIndex } from './type';
 
 const Index = ({ compData, sourceData }: IIndex) => {
   const { style, title, link } = compData.config;
-  const value = sourceData.getSourceDataValue('value', title);
+  const value = 'test data';
 
   const Text = () => {
     if (link.url) {
