@@ -2,5 +2,10 @@
   "name": "juggledv-comp-store",
   "version": "1.0.0",
   "description": "",
-  "author": ""
+  "author": "",
+  "dependencies": {
+    "noop-loader": "^1.0.0",
+    "null-loader": "^4.0.1",
+    "ts-loader": "^9.3.0"
+  }
 }
