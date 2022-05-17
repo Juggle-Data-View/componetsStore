@@ -1,22 +1,17 @@
 import { JuggleDV } from '@juggle-data-view/types';
-export interface Config {
-  title: string;
-  style: React.CSSProperties;
-  link: {
-    url: string;
-    isBlank: boolean;
-  };
-}
+/**
+ * 组件属性类型
+ * @创建时间 2020-06-30 9:00:00
+ */
 
-declare var React;
-export interface Data {
-  /**
-   * 注意：
-   * `dataConfig.filedMap.compFieldName`的值对应了这里的`value`
-   */
-  value: string;
-}
+/**
+  option: { echarts: any; };
+ * Step1: 声明组件模板配置的类型
+ */
+export interface Config extends JuggleDV.Config, EchartsOption {}
 
-export type IIndex = JuggleDV.CompIndex<Config, Data[]>;
+// for Index.tsx
+export type IIndex = JuggleDV.CompIndex<Config>;
 
+// for temps/{config}.ts
 export type IConfig = JuggleDV.CompConfig<Config>;
