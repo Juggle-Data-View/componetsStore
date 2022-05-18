@@ -1,5 +1,4 @@
 import { EChartOption } from 'echarts';
-import { CSSProperties } from 'styled-components';
 import getFormatter from './getFormatter';
 
 export const handleSeriesMarkPoint = (
@@ -57,8 +56,8 @@ export const handleSeriesMarkPoint = (
 };
 
 export interface MarkPointType {
-  label: CSSProperties;
-  rect: CSSProperties;
+  label: React.CSSProperties;
+  rect: React.CSSProperties;
   content: string;
   isShow: boolean;
 }
@@ -104,7 +103,7 @@ export const getMarkPoints = (series: any[], sourceData: any[], echartsIns: any)
         [seriesData + '', seriesItem.data[xcoords].value]
       );
 
-      const rect: CSSProperties = {
+      const rect: React.CSSProperties = {
         position: 'absolute',
         left: `${Math.floor(position[0] + symbolOffset[0] - size / 2)}px`,
         top: `${Math.floor(position[1] + symbolOffset[1] - size / 2)}px`,
@@ -116,7 +115,7 @@ export const getMarkPoints = (series: any[], sourceData: any[], echartsIns: any)
         justifyContent: 'center',
         alignItems: 'center',
       };
-      const labelCSS: CSSProperties = {
+      const labelCSS: React.CSSProperties = {
         display: label.show ? 'block' : 'none',
       };
 
