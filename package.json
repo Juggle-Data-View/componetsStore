@@ -1,6 +1,6 @@
 {
   "name": "@juggle-data-view/echarts-common",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "author": "ashes",
   "types": "src/type.d.ts",
