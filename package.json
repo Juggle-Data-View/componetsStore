@@ -11,6 +11,13 @@
   "dependencies": {
     "@juggle-data-view/echarts-common": "^1.0.0",
     "@juggle-data-view/types": "^1.0.4",
-    "@types/react": "^18.0.9"
+    "@types/react": "^18.0.9",
+    "echarts-for-react": "^3.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/echarts": "^4.9.15"
   }
 }
