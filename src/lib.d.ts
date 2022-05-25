@@ -1,1 +1,1 @@
-declare const react;
+declare const React;

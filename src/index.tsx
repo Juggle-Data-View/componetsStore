@@ -12,7 +12,7 @@ import { cloneDeep } from 'lodash';
 
 const REcharts = ReactEcharts as unknown as React.FC<any>;
 
-const { useCallback, useEffect, useRef, useState } = react;
+const { useCallback, useEffect, useRef, useState } = React;
 
 /**
  * 处理补充零值的逻辑
