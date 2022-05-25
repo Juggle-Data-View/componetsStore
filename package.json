@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "author": "ashes",
+  "types": "src/type.d.ts",
   "dependencies": {
     "@mui/icons-material": "^5.8.0",
     "dayjs": "^1.11.2",
