@@ -9,9 +9,6 @@ import { INodeConfig } from '@juggle-data-view/types/src/form';
 
 import SeriesAction from '../../seriesAction';
 
-// import { resolveName } from 'components/recursion/utils';
-// import Tabs from 'components/recursion/widget/Tabs';
-
 const doubleAxisLineBarForm: INodeConfig[] = [
   {
     name: '',

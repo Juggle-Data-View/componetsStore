@@ -1,7 +1,7 @@
 /**
  * 组件配置信息
  */
-// import * as font from 'config/form/font';
+// import * as font from 'font';
 // import Tabs from 'components/recursion/widget/Tabs';
 // import lineBarTemplate from './configs/templates/lineBarForm';
 import { JuggleDV } from '@juggle-data-view/types';

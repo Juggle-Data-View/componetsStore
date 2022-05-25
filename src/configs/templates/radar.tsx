@@ -2,7 +2,7 @@ import { INodeConfig } from '@juggle-data-view/types/src/form';
 
 import tooltip from '../common/tooltip';
 import axisLabel from '../common/axisLabel';
-import * as font from 'config/form/font';
+import * as font from 'font';
 // import * as echartsConfig from 'config/echarts';
 import classNames from 'classnames';
 

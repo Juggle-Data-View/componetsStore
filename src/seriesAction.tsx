@@ -2,7 +2,6 @@ import { JuggleDV } from '@juggle-data-view/types';
 import { MenuItem, MenuList, Popover, IconButton } from '@mui/material';
 import { ArrayHelpers } from 'formik';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
-import notice from 'utils/notice';
 import { useRef, useState } from 'react';
 
 interface SeriesItem {
@@ -37,7 +36,7 @@ const SeriesAction: React.FC<{
   const getDefaultVal = (defaultValue: any[], type: SeriesItem['type']) => {
     const result = defaultValue.find((item) => item.type === type);
     if (!result) {
-      notice.error(`${type}系列未在基础配置中找到，请检查基础配置文件`);
+      console.log(`${type}系列未在基础配置中找到，请检查基础配置文件`);
       return new Error('添加系列出错,将添加可用系列');
     }
     return result || defaultValue[0];

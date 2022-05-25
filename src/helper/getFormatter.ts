@@ -1,6 +1,5 @@
 import day from 'dayjs';
 import numeral from 'numeral';
-import notice from 'utils/notice';
 
 const getFormatter = (formatter: string) => {
   try {
@@ -14,7 +13,7 @@ const getFormatter = (formatter: string) => {
     }
     return (data: any) => formatterFunc()(data, { day, numeral });
   } catch (error) {
-    if (error instanceof Error) notice.error(error.message);
+    if (error instanceof Error) {console.log(error)}
   }
 };
 

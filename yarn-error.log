@@ -1,8 +1,8 @@
 Arguments: 
-  /home/ashes/.nvm/versions/node/v17.9.0/bin/node /home/ashes/.nvm/versions/node/v17.9.0/bin/yarn add @types/echarts-for-react @types/lodash -D
+  /home/ashes/.nvm/versions/node/v17.9.0/bin/node /home/ashes/.nvm/versions/node/v17.9.0/bin/yarn add @mui
 
 PATH: 
-  /home/ashes/.cargo/bin:/home/ashes/.nvm/versions/node/v17.9.0/bin:/home/ashes/.vscode-server/bin/57fd6d0195bb9b9d1b49f6da5db789060795de47/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:
+  /home/ashes/.cargo/bin:/home/ashes/.nvm/versions/node/v17.9.0/bin:/home/ashes/.vscode-server/bin/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:
 
 Yarn version: 
   1.22.18
@@ -14,8 +14,8 @@ Platform:
   linux x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@types%2fecharts-for-react: Not found
-      at Request.params.callback [as _callback] (/home/ashes/.nvm/versions/node/v17.9.0/lib/node_modules/yarn/lib/cli.js:66138:18)
+  Error: https://registry.yarnpkg.com/@mui: Request "https://registry.yarnpkg.com/@mui" returned a 405
+      at Request.params.callback [as _callback] (/home/ashes/.nvm/versions/node/v17.9.0/lib/node_modules/yarn/lib/cli.js:66147:18)
       at Request.self.callback (/home/ashes/.nvm/versions/node/v17.9.0/lib/node_modules/yarn/lib/cli.js:140883:22)
       at Request.emit (node:events:527:28)
       at Request.<anonymous> (/home/ashes/.nvm/versions/node/v17.9.0/lib/node_modules/yarn/lib/cli.js:141855:10)
@@ -33,13 +33,20 @@ npm manifest:
     "description": "",
     "author": "ashes",
     "dependencies": {
+      "dayjs": "^1.11.2",
       "echarts-for-react": "^3.0.2",
       "lodash": "^4.17.21",
+      "numeral": "^2.0.6",
       "react": "^18.1.0"
     },
     "devDependencies": {
       "@juggle-data-view/types": "^1.0.4",
+      "@types/lodash": "^4.14.182",
+      "@types/numeral": "^2.0.2",
       "@types/react": "^18.0.9"
+    },
+    "publishConfig": {
+      "access": "public"
     }
   }
 
@@ -208,6 +215,16 @@ Lockfile:
       redux-thunk "^2.4.1"
       reselect "^4.1.5"
   
+  "@types/lodash@^4.14.182":
+    version "4.14.182"
+    resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.182.tgz#05301a4d5e62963227eaafe0ce04dd77c54ea5c2"
+    integrity sha512-/THyiqyQAP9AfARo4pF+aCGcyiQ94tX/Is2I7HofNRqoYLgN1PBoOWu2/zTA5zMxzP5EFutMtWtGAFRKUe961Q==
+  
+  "@types/numeral@^2.0.2":
+    version "2.0.2"
+    resolved "https://registry.yarnpkg.com/@types/numeral/-/numeral-2.0.2.tgz#8ea2c4f4e64c0cc948ad7da375f6f827778a7912"
+    integrity sha512-A8F30k2gYJ/6e07spSCPpkuZu79LCnkPTvqmIWQzNGcrzwFKpVOydG41lNt5wZXjSI149qjyzC2L1+F2PD/NUA==
+  
   "@types/prop-types@*", "@types/prop-types@^15.7.5":
     version "15.7.5"
     resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.5.tgz#5f19d2b85a98e9558036f6a3cacc8819420f05cf"
@@ -250,6 +267,11 @@ Lockfile:
     version "3.0.11"
     resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.11.tgz#d66700c5eacfac1940deb4e3ee5642792d85cd33"
     integrity sha512-sa6P2wJ+CAbgyy4KFssIb/JNMLxFvKF1pCYCSXS8ZMuqZnMsrxqI2E5sPyoTpxoPU/gVZMzr2zjOfg8GIZOMsw==
+  
+  dayjs@^1.11.2:
+    version "1.11.2"
+    resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.11.2.tgz#fa0f5223ef0d6724b3d8327134890cfe3d72fbe5"
+    integrity sha512-F4LXf1OeU9hrSYRPTTj/6FbO4HTjPKXvEIC1P2kcnFurViINCVk3ZV0xAS3XVx9MkMsXbbqlK6hjseaYbgKEHw==
   
   deepmerge@^2.1.1:
     version "2.2.1"
@@ -323,6 +345,11 @@ Lockfile:
     integrity sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
     dependencies:
       js-tokens "^3.0.0 || ^4.0.0"
+  
+  numeral@^2.0.6:
+    version "2.0.6"
+    resolved "https://registry.yarnpkg.com/numeral/-/numeral-2.0.6.tgz#4ad080936d443c2561aed9f2197efffe25f4e506"
+    integrity sha1-StCAk21EPCVhrtnyGX7//iX05QY=
   
   object-assign@^4.1.1:
     version "4.1.1"
