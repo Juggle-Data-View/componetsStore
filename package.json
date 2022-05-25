@@ -1,5 +1,5 @@
 {
-  "name": "juggledv-comp-store",
+  "name": "@juggle-data-view/base-bar",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@juggle-data-view/echarts-common": "^1.0.0",
+    "@juggle-data-view/types": "^1.0.4",
     "@types/react": "^18.0.9"
   }
 }
